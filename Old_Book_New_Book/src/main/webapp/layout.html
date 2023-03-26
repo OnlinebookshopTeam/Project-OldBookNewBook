@@ -1,0 +1,92 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
+<head>
+
+<style>
+body {
+  background-image: url('libpic.jpg');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-attachment:fixed;
+}
+
+.dropbtn {
+	background-color:grey;
+	color: white;
+	padding: 18px;
+	font-size: 18px;
+	border:none;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: pink;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: black;
+}
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color:cyan;
+  font-size:3vw;
+  text-align:center;
+  
+}
+</style>
+</head>
+<body>
+
+	<div class="dropdown">
+		<button class="dropbtn">Book</button>
+		 
+		<div class="dropdown-content">
+			<a href="">New Book</a> 
+			<a href="">Old Book</a> 
+		</div>
+	</div>
+	
+	<div class="dropdown">
+		<button class="dropbtn">SignIn</button>
+		<div class="dropdown-content">
+		<a href="Login.html">Login </a>
+			<a href="register.html">Create Your Account?SignUp </a> 
+		</div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Admin</button>
+		<div class="dropdown-content">
+			<a href="">Click Here</a>
+		</div>
+	</div>
+<br/>
+<h1 style="color:white;font-size:6vw;text-align:center;">Welcome To Magic Book Shop</h1><br/><br/><br/><br/>
+<h2 class="p3">"Bookstores always remind me that there are good things in this world."</h2>
+</body>
+</html>
