@@ -14,7 +14,6 @@ public class paymentdto implements Serializable{
 	private Integer cardnumber;
 	private Integer cvv;
 	private Date expirydate;
-	private String status;
 	public Integer getId() {
 		return id;
 	}
@@ -51,19 +50,10 @@ public class paymentdto implements Serializable{
 	public void setExpirydate(Date expirydate) {
 		this.expirydate = expirydate;
 	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
 	@Override
 	public String toString() {
 		return "paymentdto [id=" + id + ", userid=" + userid + ", payment_type=" + payment_type + ", cardnumber="
-				+ cardnumber + ", cvv=" + cvv + ", expirydate=" + expirydate + ", status=" + status + "]";
+				+ cardnumber + ", cvv=" + cvv + ", expirydate=" + expirydate + "]";
 	}
 
 }

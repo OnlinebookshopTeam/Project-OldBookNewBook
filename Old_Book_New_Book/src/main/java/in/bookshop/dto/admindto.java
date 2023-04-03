@@ -3,10 +3,9 @@ package in.bookshop.dto;
 import java.io.Serializable;
 import java.util.Date;
 
-public class userdto implements Serializable{
+public class admindto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
 	private Integer id;
 	private String email;
 	private String password;
@@ -14,7 +13,6 @@ public class userdto implements Serializable{
 	private String lastname;
 	private String emailverified;
 	private Date createddate;
-	private String status;
 	public Integer getId() {
 		return id;
 	}
@@ -57,21 +55,10 @@ public class userdto implements Serializable{
 	public void setCreateddate(Date createddate) {
 		this.createddate = createddate;
 	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
 	@Override
 	public String toString() {
-		return "userdto [id=" + id + ", email=" + email + ", password=" + password + ", firstname=" + firstname
-				+ ", lastname=" + lastname + ", emailverified=" + emailverified + ", createddate=" + createddate
-				+ ", status=" + status + "]";
+		return "admindto [id=" + id + ", email=" + email + ", password=" + password + ", firstname=" + firstname
+				+ ", lastname=" + lastname + ", emailverified=" + emailverified + ", createddate=" + createddate + "]";
 	}
 	
-	}	
-
+}
